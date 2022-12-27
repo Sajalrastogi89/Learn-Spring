@@ -8,7 +8,7 @@ public class MongoDbDataService implements DataService{
 	@Override
 	public int[] retriveData() {
 		// TODO Auto-generated method stub
-		return null;
+		return new int[] {1,9,7,8,10};
 	}
 
 }
