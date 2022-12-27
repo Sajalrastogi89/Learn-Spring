@@ -1,5 +1,16 @@
 package com.ASSR.let.sdoit.bussiness;
 
-public class BussinessConfiguration {
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
+@Configuration
+@ComponentScan
+public class BussinessConfiguration {
+public static void main(String[] args) {
+	try(var context=new AnnotationConfigApplicationContext
+			(BussinessConfiguration.class)){
+	
+	context.getBean(BussinessCalculationService.class).findMax();
+	}}
 }
