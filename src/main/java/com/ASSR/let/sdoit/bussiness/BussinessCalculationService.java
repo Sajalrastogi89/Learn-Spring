@@ -2,6 +2,7 @@ package com.ASSR.let.sdoit.bussiness;
 
 import java.util.Arrays;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 @Component
 public class BussinessCalculationService {
@@ -9,7 +10,7 @@ public class BussinessCalculationService {
 	 
 	
 	 
-public BussinessCalculationService(DataService dataService) {
+public BussinessCalculationService(@Qualifier("MySQLDataService1") DataService dataService) {
 		super();
 		this.dataService = dataService;
 	}

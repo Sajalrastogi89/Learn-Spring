@@ -1,8 +1,10 @@
 package com.ASSR.let.sdoit.bussiness;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
+@Qualifier("MySQLDataService1")
 public class MySQLDataService implements DataService{
 
 	@Override
