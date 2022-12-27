@@ -1,8 +1,10 @@
 package com.ASSR.let.sdoit.bussiness;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
+@Primary
 public class MongoDbDataService implements DataService{
 
 	@Override
