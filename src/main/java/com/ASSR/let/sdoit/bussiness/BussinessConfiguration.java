@@ -11,6 +11,6 @@ public static void main(String[] args) {
 	try(var context=new AnnotationConfigApplicationContext
 			(BussinessConfiguration.class)){
 	
-	context.getBean(BussinessCalculationService.class).findMax();
+	System.out.println(context.getBean(BussinessCalculationService.class).findMax());
 	}}
 }
