@@ -16,7 +16,7 @@ public class MySQLDataService implements DataService{
 	@Override
 	public void info() {
 		// TODO Auto-generated method stub
-		
+		System.out.println();
 	}
 
 }
