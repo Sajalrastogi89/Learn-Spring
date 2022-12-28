@@ -13,4 +13,11 @@ public class MongoDbDataService implements DataService{
 		return new int[] {1,9,7,8,10};
 	}
 
+	@Override
+	public void info() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
 }
