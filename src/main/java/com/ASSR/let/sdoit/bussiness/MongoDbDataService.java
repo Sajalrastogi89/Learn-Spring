@@ -16,6 +16,7 @@ public class MongoDbDataService implements DataService{
 	@Override
 	public void info() {
 		// TODO Auto-generated method stub
+	System.out.println("MongoDbDataService");
 		
 	}
 	
