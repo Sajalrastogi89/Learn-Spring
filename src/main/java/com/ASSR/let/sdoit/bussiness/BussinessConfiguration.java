@@ -12,6 +12,7 @@ public static void main(String[] args) {
 			(BussinessConfiguration.class)){
 	
 	System.out.println(context.getBean(BussinessCalculationService.class).findMax());
+	System.out.println(context.getBean(BussinessCalculationService.class).information());
 	System.out.println(context.getBeanDefinitionNames());
 	}}
 }
