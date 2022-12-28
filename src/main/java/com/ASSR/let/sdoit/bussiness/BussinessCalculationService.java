@@ -20,4 +20,7 @@ public BussinessCalculationService(@Qualifier("MySQLDataService1") DataService d
 public int findMax() {
 	return Arrays.stream(dataService.retriveData()).max().orElse(0);
 }
+public void information() {
+	dataService.info();
+}
 }
